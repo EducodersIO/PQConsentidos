@@ -1,0 +1,334 @@
+/* Hero Section General */
+.hero-section {
+    background-color: #343a40;
+    position: relative;
+    padding: 6rem 0;
+    overflow: hidden;
+    text-align: center;
+    background: 
+        linear-gradient(rgba(52, 58, 64, 1), rgba(52, 58, 64, 1)), /* Capa semitransparente */
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9x314mGZ9_2ui2Nvqtxu8H8PibpzmoEJwtg&s") no-repeat center center/cover;
+}
+
+
+.hero-section .text-warning {
+    color: #ea0212 !important;
+}
+
+/* Fondo dinámico */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Títulos */
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: #dcdcdc;
+}
+
+/* Botones */
+.hero-section .btn-warning {
+    background-color: #ea0212;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #1b1414;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-warning:hover {
+    background-color: #ea0212;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.hero-section .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #1b1414;
+    transform: scale(1.05);
+}
+
+/* Ajustes generales del navbar */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Asegura que el logo sea responsivo */
+}
+
+/* Links de navegación */
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1b1414 !important; /* Colores personalizados */
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ea0212 !important; 
+}
+
+/* Botón CTA */
+.btn-primary {
+    background-color: #ea0212;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #7d020a;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilos para cards visuales */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-card img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .product-card .card-body {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .product-card h5 {
+    font-size: 1.8rem;
+    color: #343a40;
+  }
+
+  .product-card p {
+    font-size: 1rem;
+    padding-bottom: 0.75rem;
+    color: #6c757d;
+  }
+
+  .product-card a {
+    background-color: #ea0212;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius:5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+
+  .product-card a:hover {
+    background-color: #7d020a;
+    transform: scale(1.1);
+  }
+
+.visual-card {
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visual-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste */
+    transition: opacity 0.3s ease;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Superposición oscura */
+    transition: background 0.3s ease;
+}
+
+.visual-card:hover .card-overlay {
+    background: rgba(0, 0, 0, 0.3); /* Reduce opacidad al hover */
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.card-title .bi-whatsapp {
+    color: #25d366;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.visual-card:hover .bi-whatsapp {
+    opacity: 1;
+  }
+
+.card-text {
+    font-size: 0.9rem;
+    color: #7d020a;
+}
+
+.grid-item {
+    border: none; /* Sin bordes para un diseño limpio */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Efecto de zoom al hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más intensa */
+}
+
+.card-img-top {
+    height: 200px; /* Tamaño uniforme para las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+
+#sobre-nosotros {
+padding: 5rem 0;
+background-color: #f7f8fa;
+}
+
+#sobre-nosotros h2 {
+font-weight: bold;
+color: #ea0212; /* Coral dinámico */
+}
+
+.highlight-box {
+background-color: #fff;
+border-left: 5px solid #7d020a; /* Barra lateral de acento */
+padding: 1.5rem;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+}
+
+.highlight-box h3 {
+color: #333;
+}
+
+.stat-box {
+text-align: center;
+margin-top: 2rem;
+}
+
+.stat-box h3 {
+font-size: 2.5rem;
+color: #7d020a;
+margin: 0;
+}
+
+.stat-box p {
+margin: 0;
+font-size: 1.2rem;
+color: #666;
+}
+
+
+
+
+
+
+/* Estilos personalizados para el footer */
+footer {
+    background-color: #7d020a;
+    color: #fff;
+    padding: 3rem 0;
+    }
+
+    footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    }
+
+    footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+    color: #fff;
+    }
+
+    .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover {
+    background-color: #fff;
+    color: #ea0212;
+    transform: scale(1.2);
+    }
+
+    .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    }
+
+    @media (max-width: 400px) {
+        .hero-section h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            color: #fff;
+        }
+      }
